@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker by Sahil Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="total-section">
+            <h3>Total Spent: <span id="totalAmount">₹0.00</span></h3>
+        </div>
+        <div class="input-section">
+            <input type="text" id="descriptionInput" placeholder="Enter description..." required>
+            <input type="number" id="amountInput" placeholder="Enter amount..." step="0.01" required>
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <ul id="expenseList"></ul>
+    </div>
+    <footer>
+        <p>Made by Sahil Kumar</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
